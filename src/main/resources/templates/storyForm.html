@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Story to Image PDF Generator</title>
+</head>
+<body>
+<h1>이야기를 입력하세요</h1>
+<form action="#" th:action="@{/submit}" th:object="${story}" method="post">
+  <textarea th:field="*{text}" rows="10" cols="50" placeholder="이야기를 입력하세요..."></textarea><br>
+  <button type="submit">PDF 생성</button>
+</form>
+</body>
+</html>
